@@ -1,454 +1,163 @@
-	html, body
-	{
-		height: 100%;
-	}
-	
-	body
-	{
-		margin: 0px;
-		padding: 0px;
-		background: #242424;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 12pt;
-		font-weight: 400;
-		color: #242424;
-	}
-
-	.image.fit img {
-		width: 100%;
-		height: auto;
-	}
-	
-	h1, h2, h3
-	{
-		margin: 0;
-		padding: 0;
-	}
-	
-	p, ol, ul
-	{
-		margin-top: 0;
-	}
-	
-	ol, ul
-	{
-		padding: 0;
-		list-style: none;
-	}
-	
-	p
-	{
-		line-height: 180%;
-	}
-	
-	strong
-	{
-	}
-	
-	a
-	{
-		color: #0000FF;
-	}
-	
-	a:hover
-	{
-		text-decoration: none;
-	}
+html, body {
+    height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Copperplate', 'Source Sans Pro', sans-serif;
+	font-size: 12pt;
+	font-weight: 400;
+    background: #242424;
+	color: #242424;
+}
 
 /*********************************************************************************/
-/* Image Style                                                                   */
+/* Container                                                                     */
 /*********************************************************************************/
 
-	.image
-	{
-		display: inline-block;
-		border: 1px solid rgba(36,36,36,.1);
-	}
-
-	.image img
-	{
-		display: block;
-		width: 100%;
-	}
-
-	.image-full
-	{
-		display: block;
-		width: 100%;
-		margin: 0 0 3em 0;
-	}
-
-	.image-left
-	{
-		float: left;
-		margin: 0 2em 2em 0;
-	}
-
-	.image-centered
-	{
-		display: block;
-		margin: 0 0 2em 0;
-	}
-
-	.image-centered img
-	{
-		margin: 0 auto;
-		width: auto;
-	}
-
-/*********************************************************************************/
-/* List Styles                                                                   */
-/*********************************************************************************/
-
-	ul.style1
-	{
-	}
-
-/*********************************************************************************/
-/* Social Icon Styles                                                            */
-/*********************************************************************************/
-
-	ul.contact
-	{
-		margin: 0;
-		padding: 2em 0em 0em 0em;
-		list-style: none;
-	}
-
-	ul.contact li
-	{
-		display: inline-block;
-		padding: 0em 0.30em;
-		font-size: 1.5em;
-	}
-
-	ul.contact li span
-	{
-		display: none;
-		margin: 0;
-		padding: 0;
-	}
-
-	ul.contact li a
-	{
-		color: #EDEDED;
-	}
-
-	ul.contact li a:before
-	{
-		display: inline-block;
-		background: #242424;
-		width: 80px;
-		height: 80px;
-		line-height: 80px;
-		border-radius: 40px;
-		text-align: center;
-		color: #EDEDED;
-	}
-
-/*********************************************************************************/
-/* Form Style                                                                    */
-/*********************************************************************************/
-
-	form
-	{
-	}
-
-	form label
-	{
-		display: block;
-		text-align: left;
-		margin-bottom: 0.5em;
-	}
-
-	form .submit
-	{
-		margin-top: 2em;
-		background: #8DCB89;
-		border-radius: 8px;
-		line-height: 1.5em;
-		font-size: 1.3em;
-	}
-
-	form input.text,
-	form select,
-	form textarea
-	{
-		position: relative;
-		-webkit-appearance: none;
-		display: block;
-		border: 0;
-		background: #EDEDED;
-		background: rgba(237,237,237,0.75);
-		width: 100%;
-		border-radius: 0.50em;
-		margin: 1em 0em;
-		padding: 1.50em 1em;
-		box-shadow: inset 0 0.1em 0.1em 0 rgba(36,36,36,0.05);
-		border: solid 1px rgba(36,36,36,0.15);
-		-moz-transition: all 0.35s ease-in-out;
-		-webkit-transition: all 0.35s ease-in-out;
-		-o-transition: all 0.35s ease-in-out;
-		-ms-transition: all 0.35s ease-in-out;
-		transition: all 0.35s ease-in-out;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 1em;
-		outline: none;
-	}
-
-	form input.text:hover, form select:hover, form textarea:hover
-	{
-	}
-
-	form input.text:focus, form select:focus, form textarea:focus
-	{
-		box-shadow: 0 0 2px 1px #EDEDED;
-		background: #EDEDED;
-	}
-			
-	form textarea
-	{
-		min-height: 12em;
-	}
-
-	form .formerize-placeholder
-	{
-		color: #434343 !important;
-	}
-
-	form ::-webkit-input-placeholder
-	{
-		color: #434343 !important;
-	}
-
-	form :-moz-placeholder
-	{
-		color: #434343 !important;
-	}
-
-	form ::-moz-placeholder
-	{
-		color: #434343 !important;
-	}
-
-	form :-ms-input-placeholder
-	{
-		color: #434343 !important;
-	}
-
-	form ::-moz-focus-inner
-	{
-		border: 0;
-	}
-
-/*********************************************************************************/
-/* Container                                                                       */
-/*********************************************************************************/
-
-	.container
-	{
-		margin: 0px auto;
-		width: 1200px;
-		text-align: center;
-	}
+.container {
+	margin: 0px auto;
+	width: max-width;
+	text-align: center;
+}
 
 /*********************************************************************************/
 /* Menu                                                                          */
 /*********************************************************************************/
 
-	#menu ul
-	{
-		text-align: center;
-		padding-top: 30px;
-	}
-	
-	#menu li
-	{
-		display: inline-block;
-		border-radius: 5px;
-	}
+#menu ul {
+	padding-top: 2rem;
+}
 
-	#menu li:hover
-	{
-		background: #434343;
-	}
-	
-	#menu li a, #menu li span
-	{
-		display: inline-block;
-		margin-left: 0.50em;
-		padding: 0.8em 1em;
-		letter-spacing: 0.20em;
-		text-decoration: none;
-		font-size: 1.3em;
-		font-weight: 900;
-		text-transform: uppercase;
-		outline: 0;
-		color: #EDEDED;
-	}
-	
-	/*
-	#menu .current_page_item a
-	{
-		background: #6FC06A;
-		border-radius: 8px;
-		color: #FFF;
-	}
-	*/
+#menu li {
+	display: inline-block;
+	border-radius: 2rem;
+}
+
+#menu li:hover {
+	background: #434343;
+}
+
+#menu li a {
+    letter-spacing: 0.2rem;
+	padding: 0.5rem 1.5rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+    text-decoration: none;
+	color: #EDEDED;
+}
 
 /*********************************************************************************/
 /* Logo                                                                          */
 /*********************************************************************************/
 
-	#logo
-	{
-		padding: 1em 0em;
-		text-align: center;
-	}
+#logo {
+    margin-left: 2rem;
+}
 
-	#logo h1
-	{
-		font-size: 3.5em;
-		margin-block-start: 0em;
-		margin-block-end: 5px;
-	}
+#logo h1 {
+	padding-top: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
 
-	#logo a
-	{
-		text-decoration: none;
-		color: #EDEDED;
-	}
+#logo a {
+	text-decoration: none;
+	color: #EDEDED;
+}
 
-	#logo span
-	{
-		letter-spacing: 0.10em;
-		text-transform: uppercase;
-		font-size: 0.90em;
-		color: rgba(237,237,237,0.5); /* #EDEDED */
-	}
+#logo span {
+	letter-spacing: 0.2rem;
+    font-size: 1rem;
+    color: rgba(237,237,237); /* #EDEDED */
+}
 
 /*********************************************************************************/
-/* Column in Header                                                              */
+/* Project                                                                       */
 /*********************************************************************************/
 
-	#header .column1, #header .column2, #header .column3, #header .column4
-	{
-		margin-block-start: 3em;
-		width: 282px;
-	}
-	
-	#header .column1, #header .column2, #header .column3
-	{
-		float: left;
-		margin-right: 24px;
-	}
-	
-	#header .column4
-	{
-		float: right;
-	}
+#project {
+    padding: 3rem;
+}
 
-	#header .box
-	{
-		text-align: center;
-		color: #EDEDED;
-	}
+#project h3 {
+    padding-top: 1.5rem;
+}
 
-	#header .button-small
-	{
-		padding: 0em 1em;
-		background: #242424; /* (36, 36, 36) */
-		border-radius: 5px;
-		line-height: 1.8em;
-		font-size: 1em;
-		text-decoration: none;
-		text-transform: uppercase;
-		color: #EDEDED;
-	}
+#project .column1, #project .column2, #project .column3, #project .column4 {
+    display: inline-block;
+    color: #EDEDED;
+}
 
-	#header .button-small:hover
-	{
-		padding: 0em 1em;
-		background: #434343;
-		border-radius: 5px;
-		line-height: 1.8em;
-		font-size: 1em;
-	}
+.button-small {
+    letter-spacing: 0.2rem;
+	padding: 0.3rem 1rem;
+	font-size: 1rem;
+	border-radius: 1.3rem;
+	text-decoration: none;
+	text-transform: uppercase;
+    background: #242424; /* (36, 36, 36) */
+	color: #EDEDED;
+}
+
+.button-small:hover {
+	background: #434343;
+}
 
 /*********************************************************************************/
 /* Wrapper1                                                                      */
 /*********************************************************************************/
 
-	#wrapper1 .title
-	{
-		color: #242424;
-		padding-top: 30px;
-	}
+#wrapper1 {
+	padding: 3rem 0rem;
+	background: #EDEDED;
+}
 
-	#wrapper1 .skills
-	{
-		margin: 0px auto;
-		width: 894px;
-	}
+#wrapper1 h2 {
+    padding-top: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #242424;
+}
 
-	#wrapper1 .column1, #wrapper1 .column2, #wrapper1 .column3
-	{
-		margin-block-start: 3em;
-		width: 282px;
-	}
+.skills {
+	margin: 0px auto;
+	width: max-width;
+}
 
-	#wrapper1 .column1, #wrapper1 .column2
-	{
-		float: left;
-		margin-right: 24px;
-	}
+.skills .column1, .skills .column2, .skills .column3 {
+    letter-spacing: 0.2rem;
+    display: inline-block;
+    margin-block-start: 1.5rem;
+    vertical-align: top;
+	width: 350px;
+    color: #242424;
+}
 
-	#wrapper1 .column3
-	{
-		float: right;
-	}
+.skills h3 {
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
 /*********************************************************************************/
 /* Wrapper2                                                                      */
 /*********************************************************************************/
 
-	#wrapper2 .title
-	{
-		color: #EDEDED;
-		padding-top: 30px;
-	}
+#wrapper2 {
+	padding: 3rem 0rem;
+}
 
-	#wrapper2 span
-	{
-		letter-spacing: 0.10em;
-		font-size: 0.90em;
-		color: rgba(237,237,237,0.5); /* #EDEDED */
-	}
+#wrapper2 h2 {
+    padding-top: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #EDEDED;
+}
 
-/*********************************************************************************/
-/* Wrapper                                                                       */
-/*********************************************************************************/
-
-	#header-wrapper, #wrapper2
-	{
-		overflow: hidden;
-		padding: 2em 0em;
-		background: #242424;
-		padding-bottom: 4em;
-	}
-
-	#wrapper1
-	{
-		overflow: hidden;
-		padding: 2em 0em;
-		background: #EDEDED;
-	}
-
-	
-	
+#wrapper2 span {
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    color: rgba(237,237,237); /* #EDEDED */
+}
 
 
-
-
-/* start here */
 
